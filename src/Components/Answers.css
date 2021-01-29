@@ -1,0 +1,17 @@
+.answers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ans {
+  margin: 1em 4em 0em 4em;
+  padding-left: 2em;
+  background-color: aquamarine;
+  border-left: 0.4em solid blue;
+}
+
+.ans :hover {
+  cursor: pointer;
+  background-color: yellow;
+}

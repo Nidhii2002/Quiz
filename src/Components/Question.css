@@ -1,0 +1,16 @@
+.question {
+  margin: 3em;
+  padding: 2em;
+  background-color: aqua;
+  font-size: 2em;
+  animation: question 5s infinite;
+}
+
+@keyframes question {
+  from {
+    background-color: aqua;
+  }
+  to {
+    background-color: aquamarine;
+  }
+}
