@@ -1,0 +1,16 @@
+.result {
+  margin: 10em 10em 0em 10em;
+  border: 3px solid green;
+}
+
+.lines {
+  padding: 2em;
+  margin-left: 3em;
+  font-size: 3em;
+  color: green;
+}
+
+.rbtn {
+  color: red;
+  font-size: 1.2em;
+}

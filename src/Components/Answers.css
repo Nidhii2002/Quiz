@@ -6,12 +6,18 @@
 
 .ans {
   margin: 1em 4em 0em 4em;
-  padding-left: 2em;
+  padding: 0.1em 0em 0em 2em;
+  font-size: 1.6em;
   background-color: aquamarine;
   border-left: 0.4em solid blue;
 }
 
-.ans :hover {
+.answers :hover {
   cursor: pointer;
   background-color: yellow;
+}
+
+.answers[disabled] {
+  pointer-events: none;
+  color: red;
 }

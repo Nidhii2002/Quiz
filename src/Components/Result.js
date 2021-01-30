@@ -4,7 +4,16 @@ import "./Result.css";
 class Result extends React.Component {
   state = {};
   render() {
-    return <div>Helllo World!</div>;
+    return (
+      <div className="result">
+        <div className="lines">
+          You Have Scored {this.props.score} \ 3 !
+          <button className="rbtn" onClick={() => this.props.playAgain()}>
+            Play Again
+          </button>
+        </div>
+      </div>
+    );
   }
 }
 

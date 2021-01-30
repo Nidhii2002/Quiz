@@ -4,40 +4,27 @@ import Result from "./Result";
 
 class Answers extends React.Component {
   state = {};
+
   render() {
-    // let answer = Object.keys(this.props.answers[this.props.step])
-    //  .map((qAns, i) => (
-    //      <h1 key={qAns}>
-    //          {this.props.answers[this.props.step][qAns]}
-    //      </h1>
-    // ));
-
-    let { answers, step } = this.props;
-
-    // let ans = Object.keys(answers).map((text) => (
-    //     <li className="ans" key={text}>{answers[text]}</li>
-    // ))
+    let { answers, step, checkAns, clickAns, score, playAgain } = this.props;
 
     function ListItem(props) {
       return (
-        <li className="ans">
-          {props.value}
-          {console.log(props.value)}
-        </li>
+        <div className="ans">
+          <li onClick={() => checkAns(props.value)}>
+            <a>{props.value}</a>
+            {console.log(props.value)}
+          </li>
+        </div>
       );
     }
-
     return (
       <div>
-        {/* <ul className="answers">
-                    {answer}
-                </ul>   */}
-
-        <ul className="answers">
+        <ul disabled={clickAns ? true : false} className="answers">
           {step === 0 ? (
             answers[step]
           ) : step > 3 ? (
-            <Result />
+            <Result score={score} playAgain={playAgain} />
           ) : (
             answers[step].map((number) => (
               <ListItem key={number.toString()} value={number} />
