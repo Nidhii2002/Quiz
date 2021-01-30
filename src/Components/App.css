@@ -1,6 +1,11 @@
 .btn {
   float: right;
   margin: 0.3em 5em 0em 0em;
-  color: red;
+  color: black;
+  background-color: #4db6ac;
   font-size: 2em;
+}
+
+.btn:hover {
+  background-color: yellow;
 }
